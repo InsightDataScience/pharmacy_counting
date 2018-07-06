@@ -1,12 +1,12 @@
 # Table of Contents
-1. [Problem](README.md#Problem)
-2. [Input Dataset](README.md#Input-Dataset)
+1. [Problem](README.md#problem)
+2. [Input Dataset](README.md#input-dataset)
 3. [Details of challenge](README.md#details-of-challenge)
-4. [Instructions](README.md#Instructions)
-5. [Grading](README.md#Grading)
-6. [Tips on getting an interview](README.md#Tips-on-getting-an-interview)
+4. [Instructions](README.md#instructions)
+5. [Grading](README.md#grading)
+6. [Tips on getting an interview](README.md#tips-on-getting-an-interview)
 7. [Instructions to submit your solution](README.md#instructions-to-submit-your-solution)
-8. [Questions?](README.md#Questions?)
+8. [Questions?](README.md#questions?)
 
 # Problem
 
@@ -35,10 +35,25 @@ Confused? Check out the sample input and output files below.
 
 For example
 
-If below is the input file
+If your input data, **`itcont.txt`**, is
+```
+id,prescriber_last_name,prescriber_first_name,drug_name,drug_cost
+1000000001,Smith,James,AMBIEN,100
+1000000002,Garcia,Maria,AMBIEN,200
+1000000003,Johnson,James,CHLORPROMAZINE,1000
+1000000004,Rodriguez,Maria,CHLORPROMAZINE,2000
+1000000005,Smith,David,BENZTROPINE MESYLATE,1500
+```
 
+then your output data, **`top_cost_drug.txt`**, is 
+```
+drug_name,num_prescriber,total_cost
+CHLORPROMAZINE,2,3000
+BENZTROPINE MESYLATE,1,1500
+AMBIEN,2,300
+```
 
-The output results should be like this,
+Those files are provided in the `insight_testsuite/tests/test_1/input` and `insight_testsuite/tests/test_1/output`, respectively.
 
 
 # Tips on getting an interview
