@@ -2,15 +2,11 @@
 1. [Problem](README.md#Problem)
 2. [Input Dataset](README.md#Input-Dataset)
 3. [Details of challenge](README.md#details-of-challenge)
-4. [Input files](README.md#input-files)
-5. [Output file](README.md#output-file)
-6. [Percentile computation](README.md#percentile-computation)
-7. [Example](README.md#example)
-8. [Writing clean, scalable and well-tested code](README.md#writing-clean-scalable-and-well-tested-code)
-9. [Repo directory structure](README.md#repo-directory-structure)
-10. [Testing your directory structure and output format](README.md#testing-your-directory-structure-and-output-format)
-11. [Instructions to submit your solution](README.md#instructions-to-submit-your-solution)
-12. [FAQ](README.md#faq)
+4. [Instructions](README.md#Instructions)
+5. [Grading](README.md#Grading)
+6. [Tips on getting an interview](README.md#Tips-on-getting-an-interview)
+7. [Instructions to submit your solution](README.md#instructions-to-submit-your-solution)
+8. [Questions?](README.md#Questions?)
 
 # Problem
 
@@ -117,7 +113,7 @@ One test has been provided as a way to check your formatting and simulate how we
 
 Your submission must pass at least the provided test in order to pass the coding challenge.
 
-## Instructions to submit your solution
+# Instructions to submit your solution
 * To submit your entry please use the link you received in your coding challenge invite email
 * You will only be able to submit through the link one time 
 * Do NOT attach a file - we will not admit solutions which are attached files 
