@@ -10,26 +10,26 @@
 
 # Problem
 
-Imagine you are a data engineer working at online pharmacy. You are asked to calculate total number of UNIQUE prescribers and total drug cost for each drug. For easier view, you are asked to arrange the results in descending order based on total drug cost. 
+Imagine you are a data engineer working form an online pharmacy. You are asked to generate a list of all drugs, the total number of UNIQUE individuals who prescribed the medication, and the total drug cost, which must be listed in descending order based on the total drug cost and if there is a tie, drug name. 
 
-Disclosure: the projects that Insight Data Engineering Fellows wok on over the program are much more complicated and complex than the coding challenge. This coding challenge only tests you on basics. 
+Disclosure: The projects that Insight Data Engineering Fellows work on during the program are much more complicated and interesting than this coding challenge. This challenge only tests you on the basics. 
 
 # Input Dataset
 
-The original dataset was obtained from the Centers for Medicare & Medicaid Services but has been cleaned and simplified to match the scope of the coding challenge. It provides information on prescription drugs prescribed by individual physicians and other health care providers. The dataset identifies prescribers by their ID, last name, and first name.  It also describes the specific prescriptions that were dispensed at their direction, listed by drug name as well as the cost of the medication. 
+The original dataset was obtained from the Centers for Medicare & Medicaid Services but has been cleaned and simplified to match the scope of the coding challenge. It provides information on prescription drugs prescribed by individual physicians and other health care providers. The dataset identifies prescribers by their ID, last name, and first name.  It also describes the specific prescriptions that were dispensed at their direction, listed by drug name and the cost of the medication. 
 
 # Instructions
 
-We design this coding challenge to assess your ability to code and your understanding of computer science fundamentals. They are prerequisites for becoming a data engineer. To test those, we are asking you to pick a programing language of your choice (preferably Python, Scala, Java, C/C++, or Ruby because they are commonly used in the Data Engineering field), but you are only allowed to use the default data structures that come with the programming language, except for I/O libraries. For example, you can code in Python, but no Pandas or any other external libraries. ***The objective here is to see if you can implement the solution using the basic data structure building blocks. Also, it results in a large chunk of code which allows us to assess your code quality.*** 
+We design this coding challenge to assess your ability to code and your understanding of computer science fundamentals. They are prerequisites for becoming a data engineer. To test this, we are asking you to pick a programing language of your choice (preferably Python, Scala, Java, or C/C++ because they are commonly used and will help us better assess you), but you are only allowed to use the default data structures that come with the programming language, except for I/O libraries. For example, you can code in Python, but no Pandas or any other external libraries. ***The objective here is to see if you can implement the solution using the basic data structure building blocks and it will allow us to assess your code quality.*** 
 
 # Grading 
 
 For the output file that your program will create, `top_cost_drug.txt`, the fields on each line should be separated by `,`
 
 Each line of this file should contain these fields:
-* drug_name, the exact drug name as shown in the input dataset
-* num_prescriber, the number of unique prescribers who prescribe the drug
-* total_cost, total cost of the drug after combining all the prescribers
+* drug_name: the exact drug name as shown in the input dataset
+* num_prescriber: the number of unique prescribers who prescribed the drug. For the purposes of this challenge, a prescriber is considered the same person if two lines share the same prescriber first and last names
+* total_cost: total cost of the drug across all prescribers
 
 Confused? Check out the sample input and output files below.
 
@@ -45,7 +45,7 @@ id,prescriber_last_name,prescriber_first_name,drug_name,drug_cost
 1000000005,Smith,David,BENZTROPINE MESYLATE,1500
 ```
 
-then your output data, **`top_cost_drug.txt`**, is 
+then your output data, **`top_cost_drug.txt`**, would 
 ```
 drug_name,num_prescriber,total_cost
 CHLORPROMAZINE,2,3000
@@ -60,15 +60,15 @@ Those files are provided in the `insight_testsuite/tests/test_1/input` and `insi
 
 ## Writing clean, scalable and well-tested code
 
-As a data engineer, it’s important that you write clean, well-documented code that scales for large amounts of data. For this reason, it’s important to ensure that your solution works well for a large number of records, rather than just the above example.
+As a data engineer, it’s important that you write clean, well-documented code that scales for a large amount of data. For this reason, it’s important to ensure that your solution works well for a large number of records, rather than just the above example.
 
-<a href="https://drive.google.com/file/d/1fxtTLR_Z5fTO-Y91BnKOQd6J0VC9gPO3/view?usp=sharing">here</a> is the large dataset containing over 24 million records. Note, we will use it to test the full functionalities of your code
+<a href="https://drive.google.com/file/d/1fxtTLR_Z5fTO-Y91BnKOQd6J0VC9gPO3/view?usp=sharing">here</a> is a large dataset containing over 24 million records. Note, we will use it to test the full functionality of your code, along with other tests.
 
 It's also important to use software engineering best practices like unit tests, especially since data is not always clean and predictable.
 
 Before submitting your solution you should summarize your approach and run instructions (if any) in your `README`.
 
-You may write your solution in any mainstream programming language such as C, C++, C#, Go, Java, Python, Ruby, or Scala. Once completed, submit a link to a Github repo with your source code.
+You may write your solution in any mainstream programming language, such as C, C++, C#, Go, Java, Python, Ruby, or Scala. Once completed, submit a link to a Github or Bitbucket repo with your source code.
 
 In addition to the source code, the top-most directory of your repo must include the `input` and `output` directories, and a shell script named `run.sh` that compiles and runs the program(s) that implement the required features.
 
