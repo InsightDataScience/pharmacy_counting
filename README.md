@@ -138,4 +138,4 @@ Your submission must pass at least the provided test in order to pass the coding
 * We are unable to accept coding challenges that are emailed to us 
 
 # Questions?
-Emails us at cc@insightdataengineering.com
+Email us at cc@insightdataengineering.com
